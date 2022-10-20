@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+{{ super() }}
+
+{% if result %}
+<hr>
+<center>
+    <video src="images/{{ filepath }}" controls autoplay muted width="300" height="300">
+    <p>動画を再生できません。</p>
+    </video>
+    <hr>
+    <font size="3">
+    File: {{ filepath }}<br>
+    </font>
+    </center>
+<hr>
+
+{% endif %}
+
+{% endblock %}

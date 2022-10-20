@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+{{ super() }}
+{% if result %}
+<hr>
+<center>
+<img src="./images/{{ filepath }}" style="margin-top: 10px; vertical-align: bottom; width: 300px"><br>
+<hr>
+<font size="4"><b>予測結果: {{ result }}</b></font><br>
+<font size="3">
+File: {{ filepath }}<br>
+</font>
+</center>
+<hr>
+
+{% endif %}
+
+{% endblock %}

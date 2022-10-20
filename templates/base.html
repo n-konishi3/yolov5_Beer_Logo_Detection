@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Beer Logo Detection</title>
+</head>
+
+<br>
+<div style="text-align:center;">
+<font size="6">
+<header class="basetitle">
+    <left>
+        <img src="static/images/kirin.jpg" width="100px" height="100px">
+    </left>
+    <b>Beer Logo Detection</b>
+    <right>
+        <img src="/static/images/asahi.jpg" width="100px" height="100px">
+    </right>
+</header>
+</font>
+</div>
+
+<body>
+    <div style="text-align:center;">
+        <font size="4">
+        ファイルを選択して送信してください
+        </font>
+        <hr>
+        
+        <form action = "./" method = "POST" enctype = "multipart/form-data">
+            <input type="file" name="image" accept="image/png, image/jpeg, video/mp4">
+            <input type = "submit"/>
+        </form>
+    </div>
+
+    {% if err_message %}
+    <hr>
+    <center><font size="6" color=red><b>{{ err_message }}</b></font></center>
+    <hr>
+    {% endif %}
+
+    {% block content %}{% endblock %}
+</body>
+
+</html>
