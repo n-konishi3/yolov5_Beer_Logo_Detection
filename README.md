@@ -20,7 +20,7 @@ YOLOv5自体に「albumentations」を使った画像水増しが存在します
 
 「albumentations」を使って回転(RandomRotate)と切り出し(RandomSizedCrop)を行い、
 
-４倍(65枚→260)に増やしています。
+４倍(65枚→260枚)に増やしています。
 
 また、全体の40％に対してGridMaskを行っています。
 
