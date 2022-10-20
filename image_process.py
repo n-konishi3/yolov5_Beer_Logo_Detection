@@ -35,7 +35,7 @@ def Predict_Image(file, file_name, save_dir):
     w = "best_beer_yolov5s.pt" # モデルを指定
     
     saved_path, results = detect.run(weights=w, source=saved_temp_path, line_thickness=line_thick, 
-                                     project=save_dir, name="", exist_ok=True)
+                                     project=save_dir, name="", exist_ok=True, conf_thres=0.7)
   
     # 一時フォルダを削除
     shutil.rmtree(temp_dir)
