@@ -4,6 +4,9 @@
 
 キリンビールの麒麟![キリンロゴ画像](./00.README_image/kirin.jpg)とアサヒビールのAsahi![アサヒロゴ画像](./00.README_image/asahi.jpg)を対象としています。
 
+### 必要なライブラリについて
+requirements.txtに記載されているYOLOv5に必要なライブラリに加えFlaskが必要です。
+
 ### 学習用データセット(01.training_dataset)について
 YOLOv5自体に「albumentations」を使ったデータ水増しが存在しますが、ローカルで画像水増ししました。
 
