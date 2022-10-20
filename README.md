@@ -10,13 +10,13 @@ requirements.txtに記載されているYOLOv5の実行に必要なライブラ�
 ### 実行について
 Anaconda Prompt等からapp.pyを引数無しで実行してください。
 
-なお、クラス判定の閾値は0.5に設定しています。
+なお、クラス判定の閾値は0.7に設定しています。
 
 (image_process.pyの38行目のconf_thresで変更可能です。)
 
 
 ### 学習用データセット(01.training_dataset)について
-YOLOv5自体に「albumentations」を使った画像水増しが存在しますが、ローカルで画像水増ししました。
+YOLOv5自体に「albumentations」を使った画像水増しが存在しますが、ローカルで画像水増しを行いました。
 
 「albumentations」を使って回転(RandomRotate)と切り出し(RandomSizedCrop)を行い、
 
@@ -34,4 +34,4 @@ YOLOv5mをベースに学習させたモデルがbest_beer_yolov5m.ptです。
 (image_process.pyの35行目でモデルの変更が可能です。)
 
 ### その他
-動画ファイルも対応しています。
+動画ファイル(mp4)も対応しています。
