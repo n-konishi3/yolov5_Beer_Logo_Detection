@@ -35,3 +35,4 @@ YOLOv5mをベースに学習させたモデルがbest_beer_yolov5m.ptです。
 
 ### その他
 動画ファイル(mp4)も対応しています。
+02.detect_samplesに検出用のサンプル画像を置いています。
